@@ -1,10 +1,14 @@
 /* Apply general styles to the comments section */
+body{
+    background-color: #f2f2f2;
+}
 .comment {
     width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
   }
   
   /* Style the comment header */
@@ -30,11 +34,13 @@
   .comment-username {
     font-size: 14px;
     font-weight: bold;
+    margin-right: 10px; 
   }
   
   .comment-date {
     font-size: 12px;
     color: #999999;
+    margin-left: 10px; 
   }
   
   /* Style the comment text */
@@ -43,27 +49,17 @@
     font-size: 16px;
     max-width: 350px; 
     word-wrap: break-word; 
+    margin-left: 60px;
   }
   
   /* Style the replies */
   .comment.reply {
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-right: auto; 
-    padding-right: 1px;
-    background-color: #e8e8e8;
+    background-color: white;
     padding-left: 10px;
-    position: relative; 
-  }
-  
-  .comment.reply::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -1px; /* Added: Position the line to the right */
-    height: 100%;
-    width: 1px;
-    background-color: #ccc;
+    position: relative;
+    left: 40px;
+    width: 428px;
+
   }
   
   /* Add spacing between comments */
@@ -71,3 +67,40 @@
     margin-top: 20px;
   }
   
+  .comment-text .reply-user {
+    color: blue;
+    font-weight: bold;
+  }
+  .comment-number{
+    background-color: lightgray;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px
+  }
+
+  .reply-hover{
+    font-size: 12px;
+    color: blue;
+  }
+
+  .reply-hover:hover{
+    color: darkgray;
+  }
+  .comment-header,
+.comment-text {
+  flex: 1; 
+}
+
+.num12{
+    margin-left: 1px;
+}
+.btn-hover:hover{
+    color: yellow;
+}
+.btn-hover{
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn12{
+    margin-left: 3px;
+}
